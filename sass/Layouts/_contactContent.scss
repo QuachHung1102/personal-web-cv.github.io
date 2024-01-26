@@ -1,0 +1,81 @@
+.web_tm_contact {
+  width: 100%;
+  height: auto;
+  clear: both;
+  float: left;
+  padding: 100px 0px $pd-100 0px;
+}
+.map_wrap {
+  width: 100%;
+  height: auto;
+  clear: both;
+  float: left;
+  margin-bottom: $mg-50;
+  .mapouter {
+    position: relative;
+    text-align: right;
+    height: 355px;
+    width: 100%;
+    .gmap_canvas {
+      overflow: hidden;
+      background: none !important;
+      height: 355px;
+      width: 100%;
+      iframe {
+        max-width: 100%;
+      }
+    }
+  }
+}
+.fields {
+  width: 100%;
+  height: auto;
+  clear: both;
+  float: left;
+  .returnmessage {
+    color: #3a00ff;
+    margin-bottom: 7px;
+    text-align: left;
+    font-weight: 500;
+  }
+  .empty_notice {
+    color: #f52225;
+    margin-bottom: 7px;
+    display: none;
+    text-align: left;
+    font-weight: 500;
+  }
+  .first {
+    width: 100%;
+    float: left;
+    ul {
+      margin: 0px;
+      list-style-type: none;
+      li {
+        width: 100%;
+        margin: 0px 0px $mg-30 0px;
+        float: left;
+        input {
+          color: #fff;
+          width: 100%;
+          border: 1px solid rgba(255, 255, 255, 0.2);
+          background-color: transparent;
+          padding: $pd-10;
+        }
+      }
+    }
+  }
+  .last {
+    textarea {
+      color: #fff;
+      width: 100%;
+      // border: 1px solid rgba(0, 0, 0, 0.2);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      height: 120px;
+      resize: none;
+      margin-bottom: $mg-20;
+      background-color: transparent;
+      padding: $pd-10;
+    }
+  }
+}

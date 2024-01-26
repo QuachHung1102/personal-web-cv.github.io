@@ -1,0 +1,29 @@
+// file này chỉ chứa đường dẫn tới các file con
+// Chỉ cần biên dịch file này!
+// Các file phải được import theo các thứ tự nhất định
+
+// helper
+@import "./Helper/variables";
+@import "./Helper/mixin";
+@import "./Helper/extend";
+
+// vendors
+// base
+@import "./Base/reset";
+@import "./Base/customizes";
+
+// layout
+@import "./Layouts/sidebarMini";
+@import "./Layouts/webConent";
+@import "./Layouts/webRightpart";
+@import "./Layouts/aboutContent";
+@import "./Layouts/portfolioContent";
+@import "./Layouts/contactContent";
+// components
+@import "./Components/button";
+// pages
+@import "./Pages/home";
+
+// themes
+@import "./Themes/dark/footerDark";
+@import "./Themes/dark/webRightpartDark";

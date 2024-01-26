@@ -1,0 +1,246 @@
+.web_tm_about {
+  width: 100%;
+  height: auto;
+  clear: both;
+  float: left;
+  padding: $pd-100 0px $pd-100 0px;
+}
+
+.top_author_image {
+  width: 100%;
+  height: auto;
+  clear: both;
+  float: left;
+  position: relative;
+  margin-bottom: 35px;
+  img {
+    min-width: 100%;
+  }
+}
+
+.about_title {
+  width: 100%;
+  height: auto;
+  clear: both;
+  float: left;
+  border-bottom: 1px solid #dfdfdf;
+  border-bottom-color: rgba(255, 255, 255, 0.1);
+  padding-bottom: 20px;
+  margin-bottom: 27px;
+  h3 {
+    font-size: 22px;
+    font-weight: $fw-700;
+  }
+}
+
+.about_text {
+  width: 100%;
+  height: auto;
+  clear: both;
+  float: left;
+  border-bottom: 1px solid #dfdfdf;
+  border-bottom-color: rgba(255, 255, 255, 0.1);
+  padding-bottom: $mg-32;
+  margin-bottom: $mg-30;
+  p {
+    margin-bottom: $mg-10 + 1;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.web_tm_short_info {
+  width: 100%;
+  height: auto;
+  clear: both;
+  float: left;
+  display: flex;
+  border-bottom: 1px solid #dfdfdf;
+  border-bottom-color: rgba(255, 255, 255, 0.1);
+  padding-bottom: $pd-30;
+  margin-bottom: $mg-40;
+  .web_tm_info {
+    width: 100%;
+    height: auto;
+    clear: both;
+    float: left;
+    ul {
+      margin: 0px;
+      list-style-type: none;
+      li {
+        margin: 0;
+        span {
+          color: $color-gray-2;
+          &:first-child {
+            min-width: 100px;
+            float: left;
+            margin-right: 10px;
+            font-weight: 700;
+            color: $color-white-0;
+          }
+        }
+      }
+    }
+  }
+  .web_tm_button {
+    width: 100%;
+    height: auto;
+    clear: both;
+    float: left;
+  }
+}
+
+.web_tm_progressbox {
+  width: 100%;
+  height: auto;
+  clear: both;
+  float: left;
+  background-color: #fff;
+  background-color: #494b50;
+  padding: 93px 0px 100px 0px;
+}
+
+.web_tm_skillbox {
+  width: 100%;
+  height: auto;
+  clear: both;
+  float: left;
+  padding: 90px 0px 90px 0px;
+  .web_tm_skill_list {
+    width: 100%;
+    height: auto;
+    clear: both;
+    float: left;
+    ul {
+      margin: 0px;
+      list-style-type: none;
+      li {
+        margin: 0px;
+        padding-left: $pd-25;
+        position: relative;
+        span {
+          i {
+            color: $color-white-0;
+            position: absolute;
+            left: 0px;
+            top: 50%;
+            transform: translateY(-50%);
+          }
+        }
+      }
+    }
+  }
+}
+
+.web_tm_resumebox {
+  width: 100%;
+  height: auto;
+  clear: both;
+  float: left;
+  background-color: #fff;
+  background-color: #494b50;
+  padding: 93px 0px;
+  .web_tm_resume_list {
+    width: 100%;
+    height: auto;
+    clear: both;
+    float: left;
+    ul {
+      margin: 0px;
+      list-style-type: none;
+      position: relative;
+      display: inline-block;
+      padding-top: $pd-10;
+      &::before {
+        content: "";
+        position: absolute;
+        width: 1px;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background-color: rgba(0, 0, 0, 0.07);
+        background-color: rgba(255, 255, 255, 0.07);
+      }
+      li {
+        margin: 0px;
+        width: 100%;
+        float: left;
+        position: relative;
+        padding-left: $pd-20;
+        padding-bottom: $pd-40 + 5;
+        &::before {
+          content: "";
+          position: absolute;
+          height: 18px;
+          width: 18px;
+          background: #fff;
+          border-radius: 100%;
+          border: solid 1px #ccc;
+          background-color: #494b50;
+          border-color: rgba(255, 255, 255, 0.2);
+          left: -9px;
+          top: 8px;
+        }
+      }
+    }
+  }
+}
+
+.web_tm_testimonials {
+  width: 100%;
+  height: auto;
+  clear: both;
+  float: left;
+  padding: $pd-100 0px;
+  .tokyo_section_title {
+    margin-bottom: $mg-40;
+  }
+  .list_inner {
+    float: left;
+    display: block;
+    .details {
+      display: flex;
+      align-items: center;
+      .image {
+        position: relative;
+        width: 60px;
+        height: 60px;
+      }
+    }
+  }
+  .owl-carousel {
+    .owl-item {
+      margin-right: $mg-30;
+    }
+  }
+}
+
+@media (max-width: 1600px) {
+}
+
+@media (max-width: 1200px) {
+}
+
+@media (max-width: 1040px) {
+}
+
+@media (max-width: 768px) {
+  .web_tm_short_info {
+    flex-direction: column;
+  }
+  .left,
+  .right {
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .in {
+    flex-direction: column;
+    .left {
+      margin-bottom: $mg-60;
+    }
+  }
+  .web_tm_progressbox {
+  }
+}

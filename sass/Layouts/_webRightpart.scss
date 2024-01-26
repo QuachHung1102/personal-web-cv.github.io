@@ -1,0 +1,230 @@
+.rightpart {
+  width: 100%;
+  min-height: 100vh;
+  float: left;
+  position: relative;
+  background-color: $color-black-1;
+  padding-left: 450px;
+  .rightpart_in {
+    position: relative;
+    width: 100%;
+    float: left;
+    clear: both;
+    // border-left: 1px solid #ebebeb;
+    min-height: 100vh;
+    border-left: none;
+    .web_tm_section {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      overflow: hidden;
+      overflow-y: scroll;
+      opacity: 0;
+      visibility: hidden;
+      z-index: 8;
+      transition:
+        visibility 1s linear,
+        opacity 0s linear;
+      .container {
+        max-width: 1070px;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        height: auto;
+        padding: 0px $pd-40;
+        position: relative;
+        clear: both;
+        .web_tm_home {
+          width: 100%;
+          min-height: 100vh;
+          clear: both;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          position: relative;
+        }
+      }
+    }
+    .animated {
+      opacity: 1;
+      visibility: visible;
+      z-index: 9;
+    }
+    .hidden {
+      opacity: 0;
+      visibility: hidden;
+      z-index: 9;
+    }
+    .active {
+      opacity: 1;
+      visibility: visible;
+      z-index: 10;
+    }
+    .fadeInUp {
+      animation-name: fadeInUp;
+    }
+  }
+}
+.home_content {
+  display: flex;
+  align-items: center;
+  .avatar {
+    min-width: 300px;
+    min-height: 300px;
+    position: relative;
+    border-radius: 100%;
+    .image {
+      position: absolute;
+      top: 0px;
+      bottom: 0px;
+      left: 0px;
+      right: 0px;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      animation: morph 8s ease-in-out infinite 1s;
+      background-blend-mode: multiply;
+      box-shadow: inset 0px 0px 0px 9px rgba(255, 255, 255, 0.3);
+    }
+  }
+  .details {
+    margin-left: $mg-80;
+    .name {
+      font-size: 55px;
+      font-weight: $fw-800;
+      text-transform: uppercase;
+      margin-bottom: $mg-10 + 4;
+    }
+    .job {
+      font-family: "Montserrat";
+      font-weight: $fw-500;
+      max-width: 450px;
+      margin-bottom: $mg-25;
+    }
+    .social {
+      width: 100%;
+      float: left;
+      ul {
+        margin: 0;
+        list-style-type: none;
+        li {
+          margin: 0 8px 0 0;
+          display: inline-block;
+          a {
+            color: $color-gray-2;
+            font-size: 20px;
+            transition: all .5s;
+            &:hover {
+              color: $color-white-0;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1600px) {
+  .rightpart {
+    padding-left: 350px;
+    .rightpart_in {
+      .web_tm_section {
+        .container {
+          max-width: 968px;
+          .home_content {
+            .avatar {
+              min-width: 250px;
+              min-height: 250px;
+            }
+            .details {
+              .name {
+                font-size: $fs-50 - 2;
+                margin-bottom: $mg-10;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .rightpart {
+    padding-left: 0;
+  }
+}
+
+@media (max-width: 1040px) {
+  .rightpart {
+    .rightpart_in {
+      .web_tm_section {
+        .container {
+          padding: 0 $pd-20;
+          .web_tm_home {
+            .home_content {
+              flex-direction: column;
+              text-align: center;
+              .avatar {
+                margin-bottom: $mg-30;
+              }
+              .details {
+                margin-left: 0;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .rightpart {
+    padding-left: 0;
+    .rightpart_in {
+      .web_tm_section {
+        .container {
+          max-width: 968px;
+          .home_content {
+            .avatar {
+              min-width: 200px;
+              min-height: 200px;
+            }
+            .details {
+              .name {
+                font-size: $fs-50 - 2;
+                margin-bottom: $mg-10;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes morph {
+  0% {
+    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+  }
+  50% {
+    border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%;
+  }
+  100% {
+    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+  }
+}

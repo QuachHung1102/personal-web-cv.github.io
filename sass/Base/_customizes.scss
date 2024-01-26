@@ -1,0 +1,223 @@
+.in {
+  width: 100%;
+  height: auto;
+  clear: both;
+  float: left;
+  display: flex;
+}
+.left {
+  padding-right: $pd-50;
+  width: 50%;
+}
+.right {
+  padding-left: $pd-50;
+  width: 50%;
+}
+.number {
+  float: right;
+}
+.main {
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 100%;
+}
+.info {
+  padding-left: $pd-20;
+}
+.text {
+  width: 100%;
+  height: auto;
+  clear: both;
+  float: left;
+  position: relative;
+  border: 2px solid $color-white-border-light-1;
+  border-color: $color-gray-border-dark-1;
+  padding: 40px;
+  margin-bottom: 30px;
+  &::before {
+    position: absolute;
+    content: "";
+    height: 0px;
+    width: 0px;
+    top: 100%;
+    left: 50px;
+    border: solid transparent;
+    // border-top-color: $color-white-border-light-1;
+    border-top-color: $color-gray-border-dark-1;
+    border-width: 18px 18px 0px 0px;
+  }
+  &::after {
+    position: absolute;
+    content: "";
+    top: 100%;
+    left: 50px;
+    height: 0px;
+    width: 0px;
+    border: solid transparent;
+    // border-top-color: $color-white-border-light-2;
+    border-top-color: $color-black-1;
+    border-width: 14px 13px 0px 0px;
+    margin-left: 2px;
+  }
+}
+.time {
+  width: 50%;
+  padding-right: $pd-20;
+  span {
+    display: inline-block;
+    padding: 5px 25px;
+    background-color: rgba(255, 255, 255, 0.05);
+    color: $color-white-0;
+    border-radius: 50px;
+    font-size: 14px;
+    white-space: nowrap;
+  }
+}
+.place {
+  width: 50%;
+  padding-left: $pd-20;
+  h3 {
+    font-size: 16px;
+    margin-bottom: 2px;
+    font-weight: 600;
+    color: $color-white-0;
+  }
+  span {
+    font-size: $fs-13;
+  }
+}
+.list {
+  width: 100%;
+  height: auto;
+  clear: both;
+  float: left;
+  overflow: hidden;
+}
+.list_inner {
+  width: 100%;
+  height: auto;
+  clear: both;
+  display: flex;
+  position: relative;
+}
+.list_wrapper {
+  width: 100%;
+  height: auto;
+  clear: both;
+  float: left;
+}
+.details {
+  width: 100%;
+  height: auto;
+  clear: both;
+  float: left;
+  padding-left: $pd-20;
+}
+.background {
+  background: rgba(255, 255, 255, 0.09);
+  width: 100%;
+  min-width: 100%;
+  position: relative;
+  height: 3px;
+  .bar {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    .bar_in {
+      background: $color-white-0;
+      overflow: hidden;
+      position: absolute;
+      left: 0px;
+      top: 0px;
+      bottom: 0px;
+    }
+  }
+}
+
+.web_tm_title {
+  width: 100%;
+  height: auto;
+  clear: both;
+  float: left;
+  margin-bottom: 62px;
+  .title_flex {
+    width: 100%;
+    height: auto;
+    clear: both;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    .left {
+      span {
+        background-color: rgba(255, 255, 255, 0.04);
+        color: $color-gray-6;
+        display: inline-block;
+        text-transform: uppercase;
+        padding: 4px 10px;
+        font-weight: 600;
+        font-size: 12px;
+        font-family: "Montserrat";
+        letter-spacing: 0px;
+        margin-bottom: 11px;
+      }
+      h3 {
+        color: $color-white-0;
+        font-weight: $fw-800;
+      }
+    }
+  }
+}
+
+.web_section_title {
+  width: 100%;
+  height: auto;
+  clear: both;
+  float: left;
+  margin-bottom: $mg-40;
+  h3 {
+    font-size: $fs-20;
+    font-weight: $fw-700;
+    color: $color-white-0;
+  }
+}
+
+.web_tm_button {
+  width: 100%;
+  height: auto;
+  clear: both;
+  float: left;
+  a {
+    // color: #fff;
+    // background-color: #000;
+    display: inline-block;
+    padding: 9px 40px 14px 40px;
+    transition: all 0.3s ease;
+    background-color: #fff;
+    color: #000;
+  }
+}
+
+.web_progress {
+  width: 100%;
+  height: auto;
+  clear: both;
+  float: left;
+  .progress_inner {
+    width: 100%;
+    margin-bottom: $mg-20;
+    color: $color-white-0;
+    > span {
+      margin: 0px 0px $mg-5 0px;
+      width: 100%;
+      display: block;
+      text-align: left;
+      color: $color-white-0;
+    }
+  }
+}
