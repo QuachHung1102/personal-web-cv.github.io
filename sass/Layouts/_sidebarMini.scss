@@ -71,3 +71,9 @@
     transform: translateX(60%);
   }
 }
+
+@media (max-width: 768px) {
+  .sidebarMini {
+    top: 75%;
+  }
+}
